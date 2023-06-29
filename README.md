@@ -4,7 +4,7 @@ Self-contained little HTML files that can perform key exchange and encryption, u
 
 **Warning!** Please note that this is built for educational purposes and has not been reviewed by any security expert. Do **not** rely on it for sensitive files.
 
-Demo: [palmenhq.dev/create-ecehedey.html](https://www.palmenhq.dev/create-ecehedey.html)
+Demo: [palmenhq.dev/create-ecedehey.html](https://www.palmenhq.dev/create-ecedehey.html)
 
 ## How it works
 
