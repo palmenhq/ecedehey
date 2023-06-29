@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecedehey Creator</title>
+  </head>
+  <body>
+    <div class="create">
+      <div id="info"></div>
+      <div class="create__copy">
+        <h1>Ecdehey private key generator</h1>
+        <p>
+          To encrypt and decrypt files you need at least two private keys.
+          Private key files in Ecedehey are self-contained HTML files that does
+          encryption and decryption for you.
+          <em
+            >Ecedehey is completely browser-based and client side, no data is
+            sent to the server. It solely relies on the
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API"
+              target="_blank"
+              >WebCrypto API</a
+            >.</em
+          >
+          Read more about it in the
+          <a
+            href="https://www.palmenhq.dev/annotated/2023/06/fun-with-webcrypto/"
+            >blog post</a
+          >.
+        </p>
+        <p class="error">
+          Please note that this is built for educational purposes and has not
+          been reviewed by any security expert. Do
+          <strong>not</strong> rely on it for sensitive files.
+        </p>
+      </div>
+      <button id="create">Create Ecedehey Private Key</button>
+    </div>
+    <script>
+      window.__ECEDEHEY_VERSION__ = '1.0.0' // TODO automatically generate this
+    </script>
+    <script type="module" src="./src/main-create.ts"></script>
+  </body>
+</html>

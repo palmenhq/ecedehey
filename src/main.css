@@ -1,0 +1,87 @@
+:root {
+  --color-foreground: #47c747;
+  --color-foreground--light: #72d072;
+  --color-foreground--lighter: #85cc85;
+  --color-error: #ef6565;
+  --color-background: #1a1a1a;
+  --color-background--light: #2c2c2c;
+  --color-border: #707070;
+  --color-disabled: #a0a0a0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: monospace;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+}
+a {
+  color: var(--color-foreground--light);
+}
+a:hover {
+  color: var(--color-foreground--lighter);
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.button,
+button {
+  display: inline-block;
+  font: inherit;
+  background: var(--color-foreground);
+  border: 0;
+  color: #000;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+  color: #000;
+  background: var(--color-foreground--light);
+}
+
+.button:disabled,
+button:disabled {
+  background-color: var(--color-disabled);
+  cursor: auto;
+}
+
+label > span {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.file-input {
+  font: inherit;
+  max-width: 100%;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.pad {
+  padding: 1rem;
+}
+
+.push-bottom {
+  margin-bottom: 1rem;
+}

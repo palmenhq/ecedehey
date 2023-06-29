@@ -1,0 +1,38 @@
+.key {
+  max-width: 80rem;
+  margin: auto;
+}
+
+.key__encryption {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.key__public-key__boxes__box {
+  padding-bottom: 1rem;
+}
+
+.key-box {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-background--light);
+  color: #fff;
+}
+
+.key-box__title {
+  font-size: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.key-box__key {
+  user-select: all;
+  margin: 0;
+  word-break: break-all;
+  white-space: pre-line;
+}

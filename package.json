@@ -1,0 +1,23 @@
+{
+  "name": "fun-with-webcrypto",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && yarn build-key && yarn build-factory",
+    "build-key": "vite build --config vite.key-config.ts",
+    "build-factory": "vite build --config vite.factory-config.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-singlefile": "^0.13.5"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3"
+  }
+}
